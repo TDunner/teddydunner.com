@@ -1,0 +1,51 @@
+@use "../abstracts/" as a;
+
+footer {
+  @include a.flex(column, center, center);
+  width: 100%;
+  margin-top: 10vh;
+  text-align: center;
+
+
+  h1,
+  h4 {
+    color: var(--text5);
+    padding: 1rem;
+  }
+  h4 {
+    opacity: 0.7;
+    line-height: var(--font-lineheight-5);
+  }
+
+  .social {
+    display: block;
+    height: max(9rem, 15vh);
+    width: 100%;
+    margin-top: 10vh;
+        border-top: 1px solid var(--surface1);
+    
+    div {
+        display: inline-block;
+      height: 3rem;
+      width: 3rem;
+      margin: 0 0.5rem;
+      background-color: var(--text5);
+      border-radius: var(--radius-round);
+    }
+
+    i {
+      padding: 1rem;
+      color: var(--surface5);
+      font-size: var(--font-size-2);
+    }
+  }
+}
+.sub-footer {
+    width: 100%;;
+    p, a{
+      font-size: 0.6rem;
+      color: var(--text5);
+      margin-bottom: 10px;
+    }
+
+}
