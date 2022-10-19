@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/tdunner/Theodore-Dunner-The-Website">
-    <img src="img/TD-logo.png" alt="Logo" width="200" height="200">
+    <img src="img/TD-Logo.png" alt="Logo" width="200" height="200">
   </a>
 
 <h3 align="center">My Portfolio</h3>
