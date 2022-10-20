@@ -1,3 +1,4 @@
+@import url("http://fonts.cdnfonts.com/css/amsterdam-2");
 html {
   /* peri */
   --brand-peri: var(--brand-main);
@@ -31,14 +32,14 @@ html {
 }
 
 :root {
-  --brand-main: hsl(250, 50%, 39%);
-  --brand-100: white;
+  --brand-main: #576f72;
+  --brand-100: #d6dad2;
   --brand-200: hsl(36, 86%, 70%);
   --brand-300: hsl(36, 86%, 70%);
   --brand-400: hsl(239, 33%, 73%);
   --brand-500: hsl(239, 31%, 63%);
   --brand-600: hsl(238, 34%, 38%);
-  --brand-900: hsl(250, 50%, 39%);
+  --brand-900: #7d9d9c;
   color-scheme: light;
   /* set defaults */
   --brand: var(--text1-peri);
@@ -142,12 +143,12 @@ html {
 }
 
 :root {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
 }
 
 h1,
 .h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Amsterdam", sans-serif;
   color: var(--text1);
   font-size: clamp(2.5rem, 6vw, 5rem);
   letter-spacing: 0.075em;
@@ -156,7 +157,7 @@ h1,
 h2,
 .h2 {
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   color: var(--brand);
   font-size: var(--font-size-fluid-3);
   letter-spacing: 1px;
@@ -164,7 +165,7 @@ h2,
 
 h3,
 .h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-weight: 700;
   color: var(--text1);
   font-size: clamp(0.9rem, 2vw, 1.5rem);
@@ -174,7 +175,7 @@ h3,
 h4,
 .h4 {
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-weight: 700;
   color: var(--text1);
   font-size: var(--font-size-fluid-0);
@@ -184,7 +185,7 @@ h4,
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-size: var(--font-size-fluid-0);
   max-inline-size: unset;
 }
@@ -305,8 +306,7 @@ header {
 .hero-logo-img {
   position: absolute;
   z-index: -1;
-  opacity: var(--logo-opacity);
-  width: clamp(15em, 40vw, 30rem);
+  width: clamp(40em, 40vw, 30rem);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -941,12 +941,23 @@ footer .social i {
 .sub-footer {
   width: 100%;
 }
-.sub-footer p, .sub-footer a {
+.sub-footer p,
+.sub-footer a {
   font-size: 0.6rem;
   color: var(--text5);
   margin-bottom: 10px;
 }
 
+/*.say-hi-img {
+  position: absolute;
+  z-index: -1;
+  //opacity: var(--logo-opacity);
+  //width: $hero-logo;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+*/
 .btn-primary {
   text-decoration: none;
   cursor: pointer;
