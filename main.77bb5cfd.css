@@ -34,11 +34,11 @@ html {
 :root {
   --brand-main: #576f72;
   --brand-100: #d6dad2;
-  --brand-200: hsl(36, 86%, 70%);
-  --brand-300: hsl(36, 86%, 70%);
+  --brand-200: #838383;
+  --brand-300: #838383;
   --brand-400: #bac5b0;
-  --brand-500: hsl(239, 31%, 63%);
-  --brand-600: hsl(238, 34%, 38%);
+  --brand-500: #838383;
+  --brand-600: #576f72;
   --brand-900: #7d9d9c;
   color-scheme: light;
   /* set defaults */
@@ -708,7 +708,6 @@ img.deviconvercel {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  filter: opacity(50%);
 }
 
 img.deviconcypress {
