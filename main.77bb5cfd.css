@@ -36,7 +36,7 @@ html {
   --brand-100: #d6dad2;
   --brand-200: hsl(36, 86%, 70%);
   --brand-300: hsl(36, 86%, 70%);
-  --brand-400: hsl(239, 33%, 73%);
+  --brand-400: #bac5b0;
   --brand-500: hsl(239, 31%, 63%);
   --brand-600: hsl(238, 34%, 38%);
   --brand-900: #7d9d9c;
@@ -536,11 +536,15 @@ nav li:hover {
   border-radius: var(--radius-round);
   border: var(--border-size-3) solid var(--surface4);
   width: var(--size-fluid-9);
+  position: relative;
+  top: -30px;
 }
 
 .about-text {
   padding: var(--size-5);
   width: 100%;
+  position: relative;
+  top: -35px;
 }
 .about-text h2 {
   color: var(--text5);
@@ -567,6 +571,57 @@ nav li:hover {
   }
   .about-text .btn-container {
     text-align: left;
+  }
+}
+
+/*
+.tab {
+  align-items: left;
+  //position: relative;
+  display: flex-start;
+}
+*/
+.about-title {
+  display: flex;
+  width: 100vw;
+}
+@media screen and (max-width: 400px) {
+  .about-title {
+    width: 90%;
+  }
+}
+
+.about-title-2 {
+  display: inline-flex;
+  width: 59vw;
+  background-color: #f1ece4;
+  padding: 24px;
+  justify-content: flex-end;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  bottom: -15px;
+}
+@media screen and (max-width: 1433px) {
+  .about-title-2 {
+    width: 60%;
+  }
+}
+
+.about-title-3 {
+  color: #000;
+  font-size: 42px;
+  font-family: Roboto Mono, sans-serif;
+  font-weight: 700;
+  letter-spacing: 18px;
+  text-shadow: -1.5px -1.5px #ff00ff, 1.5px 1.5px #00e3e3;
+  position: relative;
+  right: 30px;
+}
+@media screen and (max-width: 300px) {
+  .about-title-3 {
+    width: 70%;
   }
 }
 
@@ -661,6 +716,52 @@ img.deviconcypress {
   filter: opacity(50%);
 }
 
+/*
+<div id="center">
+<img src="./img/Skills-3.png" position="fixed" width="1100px" height="85px" style="float: left; margin-right: 50%">
+<img src="./img/Skills-2.png" position="fixed" width="1100px" height="85px" style="float: left; margin-right: 50%" overflow="visible">
+</div>
+*/
+.skills-title {
+  display: flex;
+  width: 100vw;
+}
+@media screen and (max-width: 400px) {
+  .skills-title {
+    width: 90%;
+  }
+}
+
+.skills-title-2 {
+  display: inline-flex;
+  width: 59vw;
+  background-color: #f1ece4;
+  padding: 24px;
+  justify-content: flex-end;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+@media screen and (max-width: 1033px) {
+  .skills-title-2 {
+    width: 70%;
+  }
+}
+
+.skills-title-3 {
+  color: #000;
+  font-size: 42px;
+  font-family: Roboto Mono, sans-serif;
+  font-weight: 700;
+  letter-spacing: 18px;
+  text-shadow: -1.5px -1.5px #ff00ff, 1.5px 1.5px #00e3e3;
+}
+@media screen and (max-width: 300px) {
+  .skills-title-3 {
+    width: 70%;
+  }
+}
+
 .btn-group > a {
   margin-top: 0.5rem;
 }
@@ -679,7 +780,7 @@ img.deviconcypress {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 6.5rem;
+  height: min(10rem, 275px);
   overflow: hidden;
   width: 100%;
 }
@@ -848,9 +949,17 @@ img.deviconcypress {
   letter-spacing: 0.075em;
 }
 
-.marquee {
+.contact-marquee {
   width: var(--marquee-width);
   height: var(--marquee-height);
+  color: var(--brand-400);
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-marquee {
+  width: var(--marquee-width);
+  height: 5px;
   color: var(--brand-400);
   overflow: hidden;
   position: relative;
@@ -896,6 +1005,53 @@ img.deviconcypress {
 @media (max-width: 600px) {
   .marquee-content li:nth-child(4) {
     color: var(--brand-100);
+  }
+}
+
+/*
+<span class="h2 blink1" aria-hidden="true">Work</span>
+<h2><span id="work"></span>Work</h2>
+<span class="h2 blink2" aria-hidden="true">Work</span>
+*/
+.work-title {
+  display: flex;
+  width: 100vw;
+}
+@media screen and (max-width: 400px) {
+  .work-title {
+    width: 90%;
+  }
+}
+
+.work-title-2 {
+  display: inline-flex;
+  width: 59vw;
+  background-color: #f1ece4;
+  padding: 24px;
+  justify-content: flex-end;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+@media screen and (max-width: 1033px) {
+  .work-title-2 {
+    width: 70%;
+  }
+}
+
+.work-title-3 {
+  color: #000;
+  font-size: 42px;
+  font-family: Roboto Mono, sans-serif;
+  font-weight: 700;
+  letter-spacing: 18px;
+  text-shadow: -1.5px -1.5px #ff00ff, 1.5px 1.5px #00e3e3;
+  position: relative;
+  right: 60px;
+}
+@media screen and (max-width: 300px) {
+  .work-title-3 {
+    width: 70%;
   }
 }
 
@@ -948,16 +1104,16 @@ footer .social i {
   margin-bottom: 10px;
 }
 
-/*.say-hi-img {
-  position: absolute;
-  z-index: -1;
-  //opacity: var(--logo-opacity);
-  //width: $hero-logo;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.say-hi-img {
+  height: 150px;
+  width: 200px;
 }
-*/
+
+.say-hi-img-container {
+  width: 100%;
+  height: auto;
+}
+
 .btn-primary {
   text-decoration: none;
   cursor: pointer;
@@ -965,7 +1121,7 @@ footer .social i {
   border: 0;
   padding: 0.5em 3em;
   margin-right: 0.5rem;
-  border-radius: var(--radius-round);
+  border-radius: 8px;
   font-weight: 700;
   font-size: 0.75rem;
   -webkit-transition: all 0.5s;
@@ -989,7 +1145,7 @@ footer .social i {
   border: 0;
   padding: 0.5em 3em;
   margin-right: 0.5rem;
-  border-radius: var(--radius-round);
+  border-radius: 8px;
   font-weight: 700;
   font-size: 0.75rem;
   -webkit-transition: all 0.5s;
@@ -1012,7 +1168,7 @@ footer .social i {
   border: 0;
   padding: 0.5em 3em;
   margin-right: 0.5rem;
-  border-radius: var(--radius-round);
+  border-radius: 8px;
   font-weight: 700;
   font-size: 0.75rem;
   -webkit-transition: all 0.5s;
@@ -1036,7 +1192,7 @@ footer .social i {
   background: var(--text5);
   text-decoration: none;
   color: var(--surface5);
-  border-radius: 2em;
+  border-radius: 8px;
 }
 .button i {
   margin-left: 1em;
@@ -1052,7 +1208,7 @@ footer .social i {
   content: "";
   position: absolute;
   border: var(--text5) solid 4px;
-  border-radius: 2.5em;
+  border-radius: 12px;
   top: 0;
   right: 0;
   bottom: 0;
