@@ -536,18 +536,14 @@ nav li:hover {
   border-radius: var(--radius-round);
   border: var(--border-size-3) solid var(--surface4);
   width: var(--size-fluid-9);
-  position: relative;
-  top: -30px;
 }
 
 .about-text {
   padding: var(--size-5);
   width: 100%;
-  position: relative;
-  top: -35px;
 }
 .about-text h2 {
-  color: var(--text5);
+  color: #000;
   text-align: center;
   margin-bottom: var(--size-4);
 }
@@ -616,8 +612,6 @@ nav li:hover {
   font-weight: 700;
   letter-spacing: 18px;
   text-shadow: -1.5px -1.5px #ff00ff, 1.5px 1.5px #00e3e3;
-  position: relative;
-  right: 30px;
 }
 @media screen and (max-width: 300px) {
   .about-title-3 {
@@ -625,6 +619,15 @@ nav li:hover {
   }
 }
 
+/*
+<div class="wrapper-dark">
+
+<div class="about-title">
+  <div class="about-title-2">
+    <div class="about-title-3">ABOUT</div>
+  </div>
+</div>
+*/
 .skills-section {
   width: 100%;
   padding: 1rem 2rem;
@@ -634,7 +637,7 @@ nav li:hover {
   align-items: center;
 }
 .skills-section h2 {
-  color: var(--text1);
+  color: #000;
   margin-top: 2rem;
 }
 .skills-section h3 {
@@ -750,18 +753,33 @@ img.deviconcypress {
 
 .skills-title-3 {
   color: #000;
+  text-align: center;
   font-size: 42px;
   font-family: Roboto Mono, sans-serif;
   font-weight: 700;
   letter-spacing: 18px;
   text-shadow: -1.5px -1.5px #ff00ff, 1.5px 1.5px #00e3e3;
-}
-@media screen and (max-width: 300px) {
-  .skills-title-3 {
+  /*
+  @media screen and (max-width: 300px) {
     width: 70%;
   }
+  */
 }
 
+/*
+.bg {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+
+<div class="skills-title">
+  <div class="skills-title-2">
+    <div class="skills-title-3">SKILLS</div>
+  </div>
+</div>
+*/
 .btn-group > a {
   margin-top: 0.5rem;
 }
@@ -780,14 +798,14 @@ img.deviconcypress {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: min(10rem, 275px);
+  height: 6.5rem;
   overflow: hidden;
   width: 100%;
 }
 .section-title h2,
 .section-title h4,
 .section-title span {
-  color: var(--text5);
+  color: #000;
   margin: 0 var(--size-3);
 }
 .section-title span {
@@ -1041,13 +1059,12 @@ img.deviconcypress {
 
 .work-title-3 {
   color: #000;
+  text-align: center;
   font-size: 42px;
   font-family: Roboto Mono, sans-serif;
   font-weight: 700;
   letter-spacing: 18px;
   text-shadow: -1.5px -1.5px #ff00ff, 1.5px 1.5px #00e3e3;
-  position: relative;
-  right: 60px;
 }
 @media screen and (max-width: 300px) {
   .work-title-3 {
