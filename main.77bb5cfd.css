@@ -1059,11 +1059,10 @@ img.deviconcypress {
 
 .work-title-3 {
   color: #000;
-  text-align: center;
   font-size: 42px;
   font-family: Roboto Mono, sans-serif;
   font-weight: 700;
-  letter-spacing: 18px;
+  letter-spacing: 8px;
   text-shadow: -1.5px -1.5px #ff00ff, 1.5px 1.5px #00e3e3;
 }
 @media screen and (max-width: 300px) {
