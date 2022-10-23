@@ -1062,7 +1062,7 @@ img.deviconcypress {
   font-size: 42px;
   font-family: Roboto Mono, sans-serif;
   font-weight: 700;
-  letter-spacing: 8px;
+  letter-spacing: 18px;
   text-shadow: -1.5px -1.5px #ff00ff, 1.5px 1.5px #00e3e3;
 }
 @media screen and (max-width: 300px) {
