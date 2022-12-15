@@ -535,7 +535,7 @@ nav li:hover {
   aspect-ratio: var(--ratio-square);
   border-radius: var(--radius-round);
   border: var(--border-size-3) solid var(--surface4);
-  width: var(--size-fluid-9);
+  width: 500px;
 }
 
 .about-text {
